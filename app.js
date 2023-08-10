@@ -11,7 +11,7 @@ var target="Delhi";
 let fetchData=async(target)=>{
 
     try{
-        const url=`https://api.weatherapi.com/v1/current.json?key=f3a168ad98fc4e29bb855917222010&q=${target}`
+        const url=`https://api.weatherapi.com/v1/current.json?key=473c8106908c49088c9110536231008&q=${target}`
 
 
         const response=await fetch(url);
@@ -22,7 +22,7 @@ let fetchData=async(target)=>{
         updateDom(data.current.temp_c,data.location.name,data.current.condition.icon,data.current.condition.text,data.location.localtime);
     }
     catch{
- alert("Location not found")
+ alert("There is some Error, Try After some time")
     }
 }
 
